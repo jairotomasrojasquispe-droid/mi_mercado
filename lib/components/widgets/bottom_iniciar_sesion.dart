@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ButtomIniciarSesion extends StatelessWidget {
+class BottomIniciarSesion extends StatelessWidget {
   final String text;
   final Color textColor;
   final Color backgroundColor;
@@ -10,7 +10,7 @@ class ButtomIniciarSesion extends StatelessWidget {
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
 
-  const ButtomIniciarSesion({
+  const BottomIniciarSesion({
     super.key,
     required this.text,
     required this.textColor,

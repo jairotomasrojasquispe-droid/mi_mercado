@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mi_mercado/components/widgets/buttom_iniciar_sesion.dart';
+import 'package:mi_mercado/components/widgets/bottom_iniciar_sesion.dart';
+import 'package:mi_mercado/components/widgets/bottom_tool_bar.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -12,13 +13,13 @@ class LoginView extends StatelessWidget {
         children: [
           Center(
             child: Container(
-              height: 400,
+              height: 414,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.black),
+              //decoration: BoxDecoration(color: Colors.black),
             ),
           ),
           Container(
-            decoration: BoxDecoration(color: Colors.red),
+            //decoration: BoxDecoration(color: Colors.red),
             padding: EdgeInsets.only(left: 15, right: 15),
             child: Column(
               children: [
@@ -46,7 +47,7 @@ class LoginView extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
 
-                ButtomIniciarSesion(
+                BottomIniciarSesion(
                   text: "inicia sesión",
                   textColor: Colors.white,
                   fontSize: 18,
@@ -57,7 +58,7 @@ class LoginView extends StatelessWidget {
 
                 SizedBox(height: 20),
 
-                ButtomIniciarSesion(
+                BottomIniciarSesion(
                   text: "Crea tu cuenta",
                   textColor: const Color.fromARGB(255, 108, 73, 163),
                   backgroundColor: Colors.white,
@@ -69,7 +70,7 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15),
-                ButtomIniciarSesion(
+                BottomIniciarSesion(
                   text:
                       "Al iniciar sesión o crear una cuenta, aceptas nuestros términos y condiciones y la Política de privacidad",
                   textColor: Colors.black,
@@ -83,14 +84,7 @@ class LoginView extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [
-              Icon(Icons.home_filled),
-              Icon(Icons.menu_book_rounded),
-              Icon(Icons.favorite_border_outlined),
-              Icon(Icons.person),
-            ],
-          ),
+          BottomToolBar(),
         ],
       ),
     );

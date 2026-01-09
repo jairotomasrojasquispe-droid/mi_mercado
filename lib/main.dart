@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      //home: OnboardingView(),
-      //home: LoginView(),
-      //home:RatingTeam(),
+
       home: LoginView(),
     );
   }
